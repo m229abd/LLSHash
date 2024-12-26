@@ -1,13 +1,13 @@
 MIT License
 
-Copyright (c) 2024 m229abd
+Copyright 2012 Kay Zhu
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
 
 The above copyright notice and this permission notice shall be included in all
 copies or substantial portions of the Software.
@@ -19,3 +19,20 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
+
+---
+
+# LLSHash Enhancements
+
+This project includes modifications to the original LSHash implementation by Kay Zhu to better suit the process of data deduplication for training large language models by Mostafa Abdolmaleki.
+
+**Modifications Include:**
+
+- Addition of a direct duplicate finder function.
+- Batch processing for improved performance.
+- Parallel processing on CPUs and clusters using Ray.
+- Integration with Hugging Face's Transformers and Datasets libraries.
+- Offloading and reloading data using disk storage for efficient RAM management.
+- Transition to NumPy's advanced storage management.
+- Removal of Redis to align with the package's new objectives.
+- Adoption of modern best practices, including type annotations and removal of deprecated package support.
